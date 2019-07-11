@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Literata', serif;
+}
+
+/*==============
+  HEADER SECTION 
+===============*/
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #314757;
+    font-size: 1.5em;
+    padding: .8em 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-size: 1.35em;
+}
+
+p {
+    margin-left: 5%;
+    color: lightslategray;
+    width: 90%
+}
+
+.header-text {
+    text-align: center;
+}
+
+
+/*===================
+   FORM SECTION    
+===================*/
+
+fieldset {
+    border: none;
+}
+
+.header-line {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 2px solid black;
+}
+
+.second-header-line {
+    margin: .25em auto 1em auto;
+    border: 1px solid black;
+    width: 90%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+legend {
+    font-size: 1.25em;
+    margin-bottom: .75em;
+}
+
+label {
+    color: gray;
+    font-size: .75rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    background-color: #ebebeb;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    width: 95%;
+    padding: 15px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    background-color: aqua; 
+}
+
+input[type="text"]:focus {
+    transition: 1s;
+}
+
+input[id="name"]::placeholder,
+input[id="email"]::placeholder {
+    color: gray;
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input[id="phone"]::placeholder,
+input[id="address"]::placeholder,
+input[id="city"]::placeholder,
+input[id="zip"]::placeholder {
+    color: gray;
+    text-align: left;
+    padding-right: 10px;
+}
+
+select:required {
+    color: gray;
+}
+
+.info-line {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.newsletter {
+    margin-left: 5%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-left: 5%;
+    margin-bottom: 1em;
+    
+}
+
+.newsletter-select {
+    margin-bottom: 1em;
+}
+
+.newsletter-format {
+    margin: 1em 0 1em 5%;
+}
+
+.box-text {
+    margin-left: 5px;
+}
+
+.other-topics {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    background-color: #ebebeb;
+    border: none;
+    margin-left: 5%;
+    width: 90%;
+    height: 75px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* ============== 
+    BUTTON
+================*/
+button {
+    margin-left: 10%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 85%;
+    height: 48px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00cc66;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #00ff80; 
+}
+
+
+/* ============== 
+    FOOTER
+================*/
+footer {
+    font-style: italic;
+    color: gray;
+    text-align: center;
+}
+
+
+
+
+/* =================
+    MEDIA QUERIES
+===================*/
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 60%;
+        margin: auto;
+    }
+
+    fieldset.contact-info {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .entry {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .entry > label {
+        width: 20%;
+        display: flex;
+    }
+
+    .entry > input {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 5%;
+    } 
+    
+    select {
+        margin-right: 5%;
+    }
+
+    }
+    
+
+
+
+
+
+
+
+
