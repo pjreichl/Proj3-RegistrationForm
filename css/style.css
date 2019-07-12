@@ -90,14 +90,17 @@ select {
     padding: 15px;
 }
 
+input[id="zip"] {
+    width: 40%;
+    display: block;
+}
+
 input[type="text"]:focus,
 textarea:focus {
     background-color: aqua; 
+    transition-duration: 1s;
 }
 
-input[type="text"]:focus {
-    transition: 1s;
-}
 
 input[id="name"]::placeholder,
 input[id="email"]::placeholder {
@@ -155,6 +158,7 @@ input[type="radio"] {
 .other-topics {
     margin-top: 1em;
     margin-bottom: 1em;
+    margin-left: 5%;
 }
 
 textarea {
@@ -235,6 +239,14 @@ footer {
     
     select {
         margin-right: 5%;
+    }
+
+    .zip {
+        justify-content: flex-start;
+    } 
+
+    input[id="zip"] {
+        margin-right: 50%;
     }
 
     }
